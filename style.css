@@ -1,0 +1,132 @@
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .owl-nav button span {
+    font-size: 100px;
+  }
+  .owl-nav button {
+    background-color: red;
+  }
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    color: rgb(166, 24, 24);
+    background-color: transparent;
+  }
+  .slide h1 {
+    color: azure;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 2px 2px 8px #ff0000;
+    margin-bottom: 400px;
+  }
+  .headings4 {
+    color: yellow;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 2px 2px 8px #ff0000;
+  }
+  .headings {
+    color: azure;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .slide h2 {
+    font-size: 40px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 8px #ff0000;
+  }
+
+  .owl-dots {
+    position: relative;
+    bottom: 80px;
+  }
+
+  .owl-icon {
+    position: relative;
+    bottom: 40px;
+  }
+
+  .p {
+    font-size: 33px;
+    color: white;
+    padding: 0 20vw;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+  }
+  .active p {
+    animation: slide 3s;
+  }
+
+  .active h2 {
+    animation: fadeIn 3s;
+  }
+  .slide button {
+    font-size: 20px;
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+  }
+  .slide {
+    height: 98vh;  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    background-position: center;
+  }
+  .image{
+    background-position: center;
+  }
+  .image1 {
+    background-image: url("owlcarousel/images/654647.jpg");
+    background-size: cover;
+   
+  }
+  .image2 {
+    background-image: url("owlcarousel/images/3ccb4f1759c8284fd84db4.80986322_edit_img_facebook_post_image_file_44067197_1506289561.webp");
+    background-size: cover;
+  }
+  .image3 {
+    background-image: url("owlcarousel/images/52585.jpg.crdownload");
+    background-size: cover;
+  }
+  .image4 {
+    background-image: url("owlcarousel/images/7276.webp");
+    background-size: cover;
+  }
+
+  .image {
+    background-size: cover;
+  }
+  img {
+    border-radius: 10px;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translate3d(10%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+    to {
+      transform: translateZ(0);
+    }
+  }
